@@ -1,0 +1,80 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  bottom: 0;
+  width: 250px;
+  z-index: 10;
+  transition: all 0.15s ease-in;
+}
+#sidebar.active{
+  left: 0;
+}
+#sidebar .card{
+  overflow: auto;
+  height: 100vh;
+  padding: 15px;
+  padding-bottom: 50px;
+}
+#sidebar hr{
+  margin: 10px 0px;
+}
+#sidebar .item{
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+#sidebar .nav .item .title {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    color: #717171;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#sidebar .nav ul,#sidebar .nav ul li{
+  margin: 0;
+}
+#sidebar .nav ul li a {
+    text-decoration: none;
+    padding: 5px 0px;
+    padding-left: 25px;
+    width: 100%;
+    display: block;
+}
+#sidebar .nav ul li span.icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 8px;
+    opacity: 0.65;
+}
+#sidebar .nav ul li a span.text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6d6d6d;
+    text-transform: capitalize;
+    word-spacing: 1px;
+}
+#sidebar .infobox_big .item,#sidebar .infobox_big .item .title,#sidebar .infobox_big .item .excerpt{
+  text-align: left;
+}
+#sidebar .infobox_big.avatar{
+  padding-left: 12px;
+}
+#sidebar .icon.cross{
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 15px;
+  height: 15px;
+  display: block;
+  z-index: 1;
+  cursor: pointer;
+}
